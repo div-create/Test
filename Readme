@@ -1,0 +1,21 @@
+Kubernetes Deployment:
+● Deploy the services given in the above-mentioned repository to a local
+Kubernetes cluster (e.g., Minikube or Kind).
+
+1.Deploying to miniKube using following commands
+
+kubectl apply -f backend-deployment.yaml
+kubectl apply -f frontend-deployment.yaml
+
+2.Get Minikube ip   
+
+minikube ip
+
+3.open the browser
+Open `http://<minikube-ip>:30000` in your browser.
+
+4.  Runthe test
+
+pytest tests .py
+
+
